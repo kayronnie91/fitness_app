@@ -99,6 +99,43 @@ class MyApp extends StatelessWidget {
                     )
                   ],
                 ),
+              ),
+              SizedBox(height: 32),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  gradient: LinearGradient(
+                      colors: [
+                        Color(0xFF2A2F26),
+                        Color(0xFF1C1F1A),
+                      ]
+                  ),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Text('Barbell Bench Press',
+                                style:TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight(800),
+                                  color:Colors.white,
+                                )
+                            ),
+                          ),
+                          Icon(Icons.more_horiz,
+                            color: Colors.white),
+                        ],
+                      ),
+                    )
+
+
+                  ],
+                )
               )
 
             ],
