@@ -113,6 +113,7 @@ class MyApp extends StatelessWidget {
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(16.0),
@@ -131,6 +132,40 @@ class MyApp extends StatelessWidget {
                             color: Colors.white),
                         ],
                       ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left:16, right:16),
+                      child: Text('Target: 4 Sets x 5-8 reps',
+                      textAlign: TextAlign.start,
+                      style:TextStyle(
+                        color:Colors.white24,
+                      )
+                      ),
+                    ),
+                    SizedBox(height: 16),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text('SET',
+                        style:TextStyle(
+                          color: Colors.white24,
+                        )
+                        ),
+                        Text('LBS',
+                            style:TextStyle(
+                              color: Colors.white24,
+                            )
+                        ),
+                        Text('REPS',
+                            style:TextStyle(
+                              color: Colors.white24,
+                            )
+                        ),
+                        Icon(Icons.check,
+                              color: Colors.white24,
+                            )
+
+                      ],
                     )
 
 
