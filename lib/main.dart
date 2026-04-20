@@ -300,6 +300,7 @@ class MyApp extends StatelessWidget {
                         ), // THIS IS WHERE THE SECOND CARD ENDS //
               
                         // THIS IS WHERE THE THIRD CARD BEGINS //
+                        SizedBox(height: 32),
               
                         Container(
                           decoration: BoxDecoration(
@@ -309,8 +310,51 @@ class MyApp extends StatelessWidget {
                                   Color(0xFF1C1F1A),
                                 ]
                             ),
-              
+                            borderRadius: BorderRadius.circular(8),
                           ),
+                          child:Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Expanded(child: Text('Incline Dumbbell Press', style:TextStyle(fontSize: 28, color:Colors.white, fontWeight: FontWeight(800)))),
+                                    Icon(Icons.more_horiz, size: 20, color: Colors.white),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(1, 8, 0, 8),
+                                  child: Text('Target: 3 Sets x 8-12 Reps', textAlign: TextAlign.start, style: TextStyle(color: Colors.white24),),
+                                ),
+
+                                Row(
+                                  children: [
+                                    Expanded(child: Text('SET', style:TextStyle(color:Colors.white24),)),
+                                    Expanded(child: Text('SET', style:TextStyle(color:Colors.white24),)),
+                                    Expanded(child: Text('SET', style:TextStyle(color:Colors.white24),)),
+                                    Expanded(child: Icon(Icons.check, size:24, color:Colors.white24)),
+                                  ],
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Expanded(child: Text('1', style:TextStyle(color:Colors.white24),)),
+                                      Expanded(child: Text('85', style:TextStyle(color:Colors.white24),)),
+                                      Expanded(child: Text('10', style:TextStyle(color:Colors.white24),)),
+                                      Expanded(child: Icon(Icons.check, size:24, color:Colors.white24)),
+                                    ],
+                                  ),
+                                )
+
+
+                              ],
+                            ),
+                          )
                         )
               
                       ]
